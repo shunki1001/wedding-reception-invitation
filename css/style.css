@@ -1,0 +1,312 @@
+body{
+    font-family: ro-nikkatsu-sei-kai-std,　sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+h2{
+    position: relative;
+    display: inline-block;
+    padding: 0 2em;
+}
+h2::before, h2::after{
+    content: '';
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    width: 45px;
+    height: 1px;
+    background-color: black;
+}
+h2::before{
+    left: 0;
+}
+h2::after{
+    right: 0;
+}
+.under-line{
+    text-decoration: underline;
+}
+
+
+
+
+#loading{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    
+
+}
+
+#mizuhiki{
+    width: 100vw;
+    opacity: 0;
+    text-align: center;
+    animation: 2s fadeIn forwards; 
+}
+@keyframes fadeIn{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+#mizuhiki img{
+    width: 100%;
+    margin: 8em auto;
+}
+
+#mizuhiki p{
+    animation: flash 2s linear infinite;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+@keyframes flash{
+    0%,100%{
+        opacity: 1;
+    }
+
+    50%{
+        opacity: 0;
+    }
+}
+
+
+
+.container{
+    width: 100%;
+    max-width: 480px;
+    background-image: url(../img/bg-p1.jpg);
+    background-attachment: fixed;
+    text-align: center;
+    margin:0 auto;
+}
+
+.top{
+    padding-top: 1em;
+}
+.top img{
+    width: 100%;
+}
+
+.top-image{
+    width: 60%;
+    margin: 0 auto;
+}
+.top-image img{
+    width: 100%;
+    
+}
+
+.top-message{
+    padding-top: 2em;
+}
+.spacer{
+    height: 1em;
+}
+
+.icon{
+    width: 50%;
+    padding:0 auto;
+}
+
+.information{
+    margin-top: 2em;
+    background-image: url(../img/tsuru.png);
+    background-size: 30%;
+    background-repeat: no-repeat;
+    background-position: 5% 35%;
+
+}
+.information .w-spacer{
+    display: inline-block;
+    width: 1.5em;
+}
+.information ul{
+    margin: 0 auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+.information ul li{
+    list-style-type: none;
+    display: inline-block;
+    width: 30%;
+    margin-right: 5%;
+    margin-left: 5%;
+    padding: 0 auto;
+}
+.information .hyakkarou img{
+    width: 70%;
+}
+.information .map{
+    margin: 0 3em;
+}
+.information .under{
+    text-decoration: underline;
+}
+
+
+.btn-square{
+    display: inline-block;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #782255;/*ボタン色*/
+  color: #FFF;
+  border-bottom: solid 4px #580235;
+  border-radius: 3px;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.btn-square:active {
+    /*ボタンを押したとき*/
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
+  }
+  
+.footer{
+    text-align: right;
+    padding-bottom: 1em;
+}
+
+
+
+.top-space{
+    padding-top: 0.75em;
+}
+.bottom-space{
+    padding-bottom: 0.75em;
+}
+
+
+/*タブ切り替え全体のスタイル*/
+.tabs {
+    margin-top: 50px;
+    background-color: #fff;
+    width: 80%;
+    margin: 0 auto;}
+  
+  /*タブのスタイル*/
+  .tab_item {
+    width: calc(100%/3);
+    height: 50px;
+    border-bottom: 3px solid #782255;
+    background-color: #c0c0c0;
+    line-height: 50px;
+    font-size: 16px;
+    text-align: center;
+    color: #565656;
+    display: block;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.2s ease;
+  }
+  .tab_item:hover {
+    opacity: 0.75;
+  }
+  
+  /*ラジオボタンを全て消す*/
+  input[name="tab_item"] {
+    display: none;
+  }
+  
+  /*タブ切り替えの中身のスタイル*/
+  .tab_content {
+    display: none;
+    padding: 40px;
+    margin-bottom: 1em;
+    clear: both;
+    overflow: hidden;
+    background-color: #e5e5e5;
+  }
+  
+  
+  /*選択されているタブのコンテンツのみを表示*/
+  #sbi:checked ~ #sbi_content,
+  #ufj:checked ~ #ufj_content,
+  #yucho:checked ~ #yucho_content{
+    display: block;
+  }
+  
+  /*選択されているタブのスタイルを変える*/
+  .tabs input:checked + .tab_item {
+    background-color: #782255;
+    color: #fff;
+  }
+
+
+
+  h3{
+      text-decoration: underline;
+  }
+
+
+
+/*モーダル*/
+.hide-area{
+	display: none;
+}
+
+/*全て共通：モーダルのボタンの色を変更したい場合*/
+.modaal-close:after, 
+.modaal-close:before{
+	background:#ccc;	
+}
+
+.modaal-close:focus:after,
+.modaal-close:focus:before,
+.modaal-close:hover:after,
+.modaal-close:hover:before{
+	background:#666;
+}
+
+
+.info-list, .cashless-list{
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom:4em;
+}
+
+.info, .cashless{
+    display: inline-block;
+    border: 1px solid #666;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    width: 300px;
+    color: #333;
+    background-color: #f5f5f5;
+    border-radius: 3px;
+    border-bottom: 4px solid #222;
+}
+
+.straight-line{
+    content: '';
+    background: #000;
+    margin: 5em 51%;
+    width: 1px;
+    height: 14em;
+}
+.modaal-content-container img{
+    margin: 0 auto;
+    width: 50%;
+}
+.modaal-content-container{
+    line-height: 2.5em;
+}
+.modaal-content-container .way-to-pay, 
+.modaal-content-container .okeya{
+    text-align: center;
+}
+
+.fas{
+    margin-left: 0.3em;
+}
+
+.modaal-content-container .right-row{
+    text-align: right;
+}

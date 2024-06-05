@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <!--サイトの情報-->
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="robots" content="noindex">
+
+    <!--OGPタグ-->
+    <meta property="org:url" content="" />
+    <meta property="og:title" content="" />
+    <meta property="og:type" content="">
+    <meta property="og:description" content="" />
+    <meta property="og:image" content="" />
+
+    <!--サイトアイコン-->
+    <link rel="icon" href="" sizes="16x16" type="" /> 
+    <link rel="icon" href="" sizes="32x32" type="" />  
+    <link rel="icon" href="" sizes="48x48" type="" /> 
+    <link rel="icon" href="" sizes="62x62" type="" />
+    <!--スマホ用アイコン推奨150*150-->
+    <link rel="apple-touch-icon-precomposed" href="" />
+
+    <!--css,Javaの読み込み-->
+    <link rel="stylesheet" href="../css/normalize.css" />
+    <link rel="stylesheet" href="../css/style_profile.css" />
+
+    <!--FontAwesomeの読み込み-->
+    <script src="https://kit.fontawesome.com/56fd0ea77e.js" crossorigin="anonymous"></script>
+
+    <!--webフォントの読み込み-->
+    <script>
+        (function(d) {
+          var config = {
+            kitId: 'yel0ovr',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+      </script>
+
+</head>
+<body>
+
+<main>
+<div class="container">
+<!--縦書きメニュー-->
+  <header id="header">
+    <nav class="dc-menu">
+      <a href="#" class="dc-menu-trigger"><span>Menu</span></a>
+        <div class="side-menu menu-overlay">
+          <ul class="menu">
+              <li><a href="index.html">お飲み物</a></li>
+              <li><a href="food.html">お食事</a></li>
+              <li><a href="map-attendance.html">席次表</a></li>
+              <li><a href="profile.html">自己紹介</a></li>
+              <li><a href="start.html">馴れ初め</a></li>
+              <li><a href="pre-wedding.html">前撮り動画</a></li>
+            </ul>
+        </div>
+  </nav>
+  </header>
+
+  <!--コンテンツ-->
+  <div class="menu-spacer"></div>
+  <div class="right-column"><p>←メニュー</p></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="spacer"></div>
+  <div class="section-title">
+    <h2>自己紹介</h2>
+    <div class="straight-line"></div>
+  </div>
+  <p>私たちの過去を検索してみましょう</p>
+  <p>知らなかったことがたくさんあるかも！？</p>
+  <ul class="accordion-area">
+    <li>
+      <section>
+        <div class="title"><img src="../img/01_03.png" alt=""></div>
+        <div class="box">
+          <img src="../img/001.JPG" alt="">
+        </div>
+      </section>
+    </li>
+    <li>
+      <section>
+        <div class="title"><img src="../img/02_03.png" alt=""></div>
+        <div class="box">
+          <img src="../img/002.JPG" alt="">
+        </div>
+      </section>
+    </li>
+    <li>
+      <section>
+        <div class="title"><img src="../img/03_03.png" alt=""></div>
+        <div class="box">
+          <img src="../img/003.JPG" alt="">
+        </div>
+      </section>
+    </li>
+    <li>
+      <section>
+        <div class="title"><img src="../img/04_03.png" alt=""></div>
+        <div class="box">
+          <img src="../img/004.JPG" alt="">
+        </div>
+      </section>
+    </li>
+    <li>
+      <section>
+        <div class="title"><img src="../img/05_03.png" alt=""></div>
+        <div class="box">
+          <img src="../img/005.JPG" alt="">
+        </div>
+      </section>
+    </li>
+    <li>
+      <section>
+        <div class="title"><img src="../img/06_03.png" alt=""></div>
+        <div class="box">
+          <img src="../img/006.JPG" alt="">
+        </div>
+      </section>
+    </li>
+  </ul>
+
+  <div class="big-spacer"></div>
+    <div class="footer">
+    <p>Designed by Shunki and Yuna</p>
+  </div>
+</div>
+    
+</main>
+<footer></footer>
+
+    <!--javascript読み込み-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="../js/script.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function() {      
+     $('.dc-menu-trigger').click(function(){
+        $('nav').toggleClass( "dc-menu-open" );
+        $('.menu-overlay').toggleClass( "open" );
+        $('header').toggleClass( "shownav" );
+     }); 
+  });
+    </script>
+</body>
+</html>
